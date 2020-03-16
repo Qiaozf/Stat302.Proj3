@@ -15,3 +15,7 @@ Function: my_rf_cv  Predict output sepal.length using covariates sepal.with
 Input: a numeric number stands for number of folds
 Output: a number -- the cross-valiadation error
 }
+\examples
+{
+my_rf_cv(5)
+}

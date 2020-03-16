@@ -2,13 +2,7 @@
 % Please edit documentation in R/my_knn_cv.R
 \name{my_knn_cv}
 \alias{my_knn_cv}
-\title{Function: my_knn_cv. Predict given class by using covariats sepal.(length, width)
-                     and petal.(length, width) 
-Input: a data frame, true class value of training data
-       an integer representing the number of neighbors
-      an integer representing the number of folds
-Output: A list which consists of a vector that includes all observations and a vector
-        than includes numeric data.}
+\title{Function: my_knn_cv}
 \usage{
 my_knn_cv(train, cl, k_nn, k_cv)
 }
@@ -20,4 +14,8 @@ Input: a data frame, true class value of training data
       an integer representing the number of folds
 Output: A list which consists of a vector that includes all observations and a vector
         than includes numeric data.
+}
+\examples{
+my_knn_cv(train = iris[, -5], k_cv = 5,k_nn = 1,cl = iris$Species)
+my_knn_cv(train = iris[, -5] ,k_cv= 5,k_nn = 5,cl = iris$Species)
 }

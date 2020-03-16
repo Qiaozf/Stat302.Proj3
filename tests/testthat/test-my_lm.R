@@ -1,3 +1,4 @@
 test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
+  data(mtcars)
+  expect_false(my_lm(mpg ~ hp + wt,data=mtcars)[1,1][1] == '')
 })
