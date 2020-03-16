@@ -1,0 +1,20 @@
+Package: Stat302.Proj3
+Title: Project 3 for STAT302
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Qiaozhi",
+           family = "Fu",
+           role = c("aut", "cre"),
+           email = "qiaozf@uw.edu")
+Description: sentence.
+Depends: R (>= 3.2)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: 
+    testthat (>= 2.1.0),
+    covr,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
